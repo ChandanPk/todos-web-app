@@ -1,11 +1,11 @@
-const Tasks = ({ tasks }) => {
+const Tasks = ({ tasks, handleDelete }) => {
     return (
         <div className="tasks">
             {tasks.map(task => {
 
               return <div className="task">
                           <p>{task}</p>
-                          <span>x</span>
+                          <span onClick={()=> {handleDelete(task)}}>x</span>
                      </div>
             })}
         </div>
