@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap');
+
 body {
   /* margin: 0; */
   text-align: center;
+  background-color: rgb(226, 218, 218);
+  font-family: 'Montserrat', sans-serif;
 }
 
 .task {
@@ -8,13 +12,53 @@ body {
   background-color: #555;
   color: #fff;
   margin: 10px auto;
-  text-align: left;
+  /* text-align: left; */
   border-radius: 2px;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 p {
-  margin: 10px auto;
+  margin: 3px;
   padding: 5px 10px;
+}
 
+button{
+  border-radius: 50%;
+  border: none;
+  font-size: 2rem;
+  margin: 5px;
+  background-color: aqua;
+  display: block;
+  margin: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  border-radius: 2px;
+  width: 380px;
+  margin: 10px auto;
+  padding: 10px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+}
+
+span {
+  margin-right: 8px;
+  border: 1px solid #555;
+  padding: 0 5px;
+  font-size: 15px;
+}
+
+span:hover {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 0 5px;
 }

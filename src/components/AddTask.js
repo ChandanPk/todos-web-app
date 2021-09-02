@@ -2,23 +2,26 @@ import { useState } from "react";
 
 const AddTask = ({ addTask }) => {
 
-
+    //state variables
     const [newTask, setNewTask] = useState();
+
 
     const handleChange = (e)=> {
         setNewTask(e.target.value);
     }
 
-
+    //handle submit
     const handleSubmit = (e)=> {
         e.preventDefault();
         addTask(newTask);
+        setNewTask("");
+        
     }
 
     return ( 
         <form onSubmit={handleSubmit}>
-            <input type="text" required onChange={(e)=> {handleChange(e)}} />
-            <button>Add task</button>
+            <input value={newTask} type="text" required onChange={(e)=> {handleChange(e)}} />
+            <button>+</button>
         </form>
      );
 }

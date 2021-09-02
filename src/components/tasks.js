@@ -5,6 +5,7 @@ const Tasks = ({ tasks }) => {
 
               return <div className="task">
                           <p>{task}</p>
+                          <span>x</span>
                      </div>
             })}
         </div>
