@@ -3,9 +3,9 @@ import { useState } from "react";
 const AddTask = ({ addTask }) => {
 
     //state variables
-    const [newTask, setNewTask] = useState();
+    const [newTask, setNewTask] = useState('');
 
-
+    //controlled input
     const handleChange = (e)=> {
         setNewTask(e.target.value);
     }
@@ -14,7 +14,7 @@ const AddTask = ({ addTask }) => {
     const handleSubmit = (e)=> {
         e.preventDefault();
         addTask(newTask);
-        setNewTask("");
+        setNewTask('');
         
     }
 

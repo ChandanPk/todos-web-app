@@ -18,7 +18,7 @@ function App() {
     setTasks(filterTasks);
   }
 
-  console.log(tasks.length)
+  // console.log(tasks.length)
 
   return (
     <div className="App">
